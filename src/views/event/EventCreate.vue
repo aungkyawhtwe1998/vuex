@@ -93,6 +93,17 @@
 
                 //call action
                 this.$store.dispatch('createEvent', event)
+                .then(()=>{
+                    this.$router.push({
+                        name:'EventDetails',
+                        params: {id: event.id}
+                    })
+                }).catch(error =>{
+                    this.$router.push({
+                        name:'ErrorDisplay',
+                        params:{error:error}
+                    })
+                })
             },
         },
     };

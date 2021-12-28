@@ -15,11 +15,7 @@
                 events:null
             }
         },*/
-        computed:{
-            events(){
-                return this.$store.state.events
-            }
-        },
+
         created() {
           /*  EventService.getEvents()
             .then(response=>{
@@ -30,7 +26,18 @@
             })*/
 
             this.$store.dispatch('fetchEvents')
-        }
+                .catch(error =>{
+                    this.$router.push({
+                        name:'ErrorDisplay',
+                        params:{error:error}
+                    })
+                })
+        },
+        computed:{
+            events(){
+                return this.$store.state.events
+            }
+        },
     }
 </script>
 

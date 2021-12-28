@@ -4,7 +4,7 @@ export default createStore({
   state: {
     user:'Alex',
     events:[],
-      event:{}
+    event:{}
   },
   mutations: {
     ADD_EVENT(state, event){
@@ -13,9 +13,9 @@ export default createStore({
     SET_EVENTS(state, events){
       state.events = events
     },
-      SET_EVENT(state, event){
-        state.event = event
-      }
+    SET_EVENT(state, event){
+      state.event = event
+    }
   },
   actions: {
     createEvent({commit}, event){
@@ -25,7 +25,7 @@ export default createStore({
             commit('ADD_EVENT', event) //(mutation, payload)
           })
           .catch(error=>{
-            console.log(error)
+            throw(error)
           })
     },
     fetchEvents({commit}){
@@ -34,18 +34,25 @@ export default createStore({
               commit('SET_EVENTS', response.data)
           })
           .catch(error=>{
-            console.log(error)
+            throw(error)
           })
     },
-      fetchEvent({commit}, id){
-          EventService.getEvent(id)
-              .then(response=>{
-                  commit('SET_EVENT', response)
-              })
-              .catch(error=>{
-                  console.log(error)
-              })
-      }
+      fetchEvent({commit, state}, id){
+        //performance boost
+        const existingEvent =state.events.find(event =>event.id === id)
+          if(existingEvent){
+              commit('SET_EVENT', existingEvent)
+          }else {
+              EventService.getEvent(id)
+                  .then(response=>{
+                      commit('SET_EVENT', response)
+                  })
+                  .catch(error=>{
+                      throw(error)
+                  })
+          }
+          }
+
   },
   modules: {},
 });

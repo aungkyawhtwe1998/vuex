@@ -3,6 +3,7 @@ import EventCreate from "../views/event/EventCreate";
 import EventList from "../views/event/EventList";
 import About from "../views/About";
 import EventDetails from "../views/event/EventDetails";
+import ErrorDisplay from "../views/ErrorDisplay";
 const routes = [
   {
     path: "/",
@@ -24,6 +25,12 @@ const routes = [
     path: "/about",
     name: "About",
     component: About
+  },
+  {
+    path: '/error/:error',
+    nae: 'ErrorDisplay',
+    props: true,
+    component: ErrorDisplay
   }
 ];
 

@@ -1,7 +1,8 @@
 <template>
     <div v-if="event">
         <h1>{{event.title}}</h1>
-        <p>{{event.time}}</p>
+        <p>{{event.time}} on {{event.date}} @ {{event.location}}</p>
+        <p>{{event.description}}</p>
         <p></p>
     </div>
 </template>
@@ -28,6 +29,12 @@
                 console.log(error)
             })*/
             this.$store.dispatch('fetchEvent', this.id)
+                .catch(error =>{
+                    this.$router.push({
+                        name:'ErrorDisplay',
+                        params:{error:error}
+                    })
+                })
         },
         computed:{
             event(){

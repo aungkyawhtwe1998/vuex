@@ -6,6 +6,7 @@
         </div>
     </router-link>
 
+
 </template>
 
 <script>
@@ -16,8 +17,11 @@
 
         name: 'EventCard',
 
+
         data() {
-            return {}
+            return {
+
+            }
         },
     }
 </script>
