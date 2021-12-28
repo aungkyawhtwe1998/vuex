@@ -1,0 +1,124 @@
+{
+  "events": [
+    {
+      "id": 123,
+      "category": "animal welfare",
+      "title": "Cat Adoption Day",
+      "description": "Find your new feline friend at this event.",
+      "location": "Meow Town",
+      "date": "January 28, 2022",
+      "time": "12:00",
+      "organizer": "Kat Laydee"
+    },
+    {
+      "id": 456,
+      "category": "food",
+      "title": "Community Gardening",
+      "description": "Join us as we tend to the community edible plants.",
+      "location": "Flora City",
+      "date": "March 14, 2022",
+      "time": "10:00",
+      "organizer": "Fern Pollin"
+    },
+    {
+      "id": 789,
+      "category": "sustainability",
+      "title": "Beach Cleanup",
+      "description": "Help pick up trash along the shore.",
+      "location": "Playa Del Carmen",
+      "date": "July 22, 2022",
+      "time": "11:00",
+      "organizer": "Carey Wales"
+    },
+    {
+      "id": 800,
+      "category": "animal welfare",
+      "title": "Cat Adoption Day",
+      "description": "Find your new feline friend at this event.",
+      "location": "Meow Town",
+      "date": "January 28, 2022",
+      "time": "12:00",
+      "organizer": "Kat Laydee"
+    },
+    {
+      "id": 801,
+      "category": "food",
+      "title": "Community Gardening",
+      "description": "Join us as we tend to the community edible plants.",
+      "location": "Flora City",
+      "date": "March 14, 2022",
+      "time": "10:00",
+      "organizer": "Fern Pollin"
+    },
+    {
+      "id": 802,
+      "category": "sustainability",
+      "title": "Beach Cleanup",
+      "description": "Help pick up trash along the shore.",
+      "location": "Playa Del Carmen",
+      "date": "July 22, 2022",
+      "time": "11:00",
+      "organizer": "Carey Wales"
+    },
+    {
+      "id": "62eebd1b-703d-40d8-bbdc-f83ec9f8bdbe",
+      "category": "nature",
+      "title": "Hello testing",
+      "description": "aungkyawhtwe.mdy49@gmail.com ",
+      "location": "asd",
+      "date": "12/4/1998",
+      "time": "12 pm",
+      "organizer": "Alex"
+    },
+    {
+      "id": "b9fc6e23-ca2b-4762-ab4e-d500cbec8784",
+      "category": "animal welfare",
+      "title": "abc",
+      "description": "abcasdfasfaf",
+      "location": "mdy",
+      "date": "12/4/88",
+      "time": "2 pm",
+      "organizer": "Alex"
+    },
+    {
+      "id": "7bc2e35b-28c2-48e9-bfe6-ee0d07159439",
+      "category": "animal welfare",
+      "title": "abc",
+      "description": "abcasdfasfaf",
+      "location": "mdy",
+      "date": "12/4/88",
+      "time": "2 pm",
+      "organizer": "Alex"
+    },
+    {
+      "id": "10ce3cbd-bbc6-41ce-bae5-379f02b3af90",
+      "category": "education",
+      "title": "sdaf",
+      "description": "sdasdasd",
+      "location": "fasdfasd",
+      "date": "asdf",
+      "time": "asdfasd",
+      "organizer": "Alex"
+    },
+    {
+      "id": "6ad1cbcb-eebd-4f44-9807-acc952fa5cec",
+      "category": "",
+      "title": "fasdf",
+      "description": "asdfas",
+      "location": "asdfasdf",
+      "date": "asdfasf",
+      "time": "aasdfas",
+      "organizer": "Alex"
+    },
+    {
+      "id": "5fa7b050-a5fe-415a-a283-6a8f3ddd0fec",
+      "category": "",
+      "title": "fasdf",
+      "description": "asdfas",
+      "location": "asdfasdf",
+      "date": "asdfasf",
+      "time": "aasdfas",
+      "organizer": "Alex"
+    }
+  ]
+}
